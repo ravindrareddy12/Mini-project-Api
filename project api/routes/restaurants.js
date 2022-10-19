@@ -50,7 +50,7 @@ router.get('/restaurantGetByName',(req, res)=>{
         res.send(response)  
     })
 })
-router.put('/resturantUpdate',(req, res)=>{
+router.put('/:id',(req, res)=>{
     resturants.updateMany({"name" : req.query.name},{"name" : req.body.name,"price" : req.body.price},(err, response)=>{
         if(err)
           res.send("error found")
