@@ -1,4 +1,5 @@
 var express = require('express');
+Var mongo 
 var router = express.Router();
 var citylist = require('../models/citylistModel')
 
